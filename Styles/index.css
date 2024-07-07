@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Poppins, sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --black-color: #1e1c1c;
+    --white-color: #f7f7f7;
+    --blue-color: #001c4a;
+    --skyBlue-color: #68a6d4;
+    --normalBlue-color: #006ab9;
+}
+
+nav {
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        padding: 1rem 2rem;
+        padding-right: 3rem;
+        border-bottom: 4px solid var(--normalBlue-color);
+
+        img {
+            height: 4rem;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            list-style: none;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: var(--black-color);
+                    transition: 200ms all;
+                    font-weight: 500;
+
+                    &:hover {
+                        color: var(--normalBlue-color);
+                    }
+                }
+            }
+
+            #aboutNav {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: .5rem 0;
+
+                ul {
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0rem;
+                    top: 5rem;
+                    opacity: 0;
+                    background-color: var(--blue-color);
+                    border: none;
+                    overflow: hidden;
+                    border-radius: 7px;
+                    transition: 200ms all;
+                    z-index: -999;
+
+                    li {
+                        text-wrap: nowrap;
+                        padding: .8rem;
+                        transition: 200ms all;
+                        border-bottom: 1px solid var(--skyBlue-color);
+
+                        &:last-child {
+                            border-bottom: none;
+                        }
+
+                        &:hover {
+                            background-color: var(--skyBlue-color);
+                        }
+
+                        a {
+                            padding: .8rem;
+                            color: var(--white-color);
+                        }
+                    }
+                }
+
+                &:hover {
+                    ul {
+                        top: 2.5rem;
+                        opacity: 1;
+                        z-index: 999;
+                    }
+                }
+            }
+        }
+
+        #Nab-bar {
+            font-size: 1.4rem;
+            cursor: pointer;
+            display: none;
+        }
+
+        @media screen and (max-width:915px) {
+            #Nab-bar {
+                display: block;
+            }
+
+            ul {
+                display: none;
+            }
+        }
+    }
+}
+
+.banner {
+    background: url(../Assets/Home/Banner.png) center;
+    background-size: cover;
+    height: calc(100vh - 6rem);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .main {
+        position: absolute;
+        right: 3rem;
+        max-width: 522px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0069b992;
+        flex-direction: column;
+        color: var(--white-color);
+        padding: 2rem 4rem;
+        border-radius: 7px;
+        gap: .3rem;
+
+        h2 {
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+
+        h1 {
+            font-weight: 800;
+            line-height: 3rem;
+            font-size: 3rem;
+        }
+
+        div {
+            width: 100%;
+
+            button {
+                margin-top: 1rem;
+                padding: .3rem 1rem;
+                padding-right: .3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 2rem;
+                border-radius: 25rem;
+                border: none;
+                font-weight: 500;
+                font-size: 1rem;
+                background-color: var(--blue-color);
+                color: var(--white-color);
+                cursor: pointer;
+                transition: 200ms all;
+
+                &:hover {
+                    background-color: var(--skyBlue-color);
+                }
+
+                i {
+                    background-color: var(--white-color);
+                    color: var(--blue-color);
+                    width: 2.6rem;
+                    height: 2.6rem;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+.letGetStarted {
+    padding: 3rem;
+
+    h1 {
+        font-size: clamp(1.5rem, -0.875rem + 8.333vw, 3rem);
+        font-weight: 800;
+        text-align: center;
+        color: var(--blue-color);
+        padding-bottom: 3rem;
+    }
+
+    .main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+        .card {
+            max-width: 320px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+    
+            a {
+                text-decoration: none;
+                text-align: center;
+                color: var(--normalBlue-color);
+            }
+    
+            .cardInner {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1.5rem;
+    
+                i{
+                    font-size: 3rem;
+                    color: var(--normalBlue-color);
+                    background-color: #eeeeee;
+                    padding: 1rem;
+                    border-radius: 1rem;
+                }
+                span {
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: .8rem;
+    
+                    h2 {
+                        padding: .5rem 0;
+                        text-align: unset;
+                    }
+    
+                    p {
+                        text-align: unset;
+                        line-height: 1.3rem;
+                        font-size: .9rem;
+                    }
+                }
+            }
+        }
+    }
+}
