@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/openAccount.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>New Age MFB</title>
+</head>
+
+<body>
+
+    <div class="accountOpen">
+        <h1>ACCOUNT <br> OPENING</h1>
+        <div class="divider"></div>
+        <p>Our account opening process is seamless. Please select the account type you want to open and fill the form, a
+            member of our team will contact you.</p>
+        <button>Apply For Loan<i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+
+    <div class="accountType">
+        <h1>Account Type</h1>
+        <div class="tabs">
+            <div id="savingAccountTab" class="tab activeTab">Savings Account Form</div>
+            <div id="individualAccountTab" class="tab">Individual Current Account</div>
+            <div id="corpoarteAccountTab" class="tab">Corpoarte Current Account</div>
+        </div>
+
+        <div class="savingAccount" id="savingAccount">
+            <h1>SAVINGS<br> ACCOUNT FORM</h1>
+            <div class="divider"></div>
+            <form action="">
+                <h2>PERSONAL DETAILS</h2>
+                <div class="inputsMain">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <select>
+                        <option value="Male">Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <textarea name="" id="" rows="5" placeholder="Permanent Address*"></textarea>
+                <h2 style="padding-top: 2rem;">NEXT OF KIN DETAILS</h2>
+                <div class="inputsMain">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                </div>
+                <textarea name="" id="" rows="5" placeholder="Permanent Address*"></textarea>
+
+                <div class="additionalFiles">
+                    <h2>Additional Files</h2>
+                    <h3>Please Upload scanned copies of the following:</h3>
+                    <ol>
+                        <li> Recent Passport Photograph*</li>
+                        <li> Recent Utility Bill* (Not morethan 3 months)</li>
+                        <li> Valid Means of Identification*</li>
+                        <li> Your Signature or Thumb print*</li>
+                    </ol>
+
+                    <div class="files">
+                        <input type="file">
+                        <hr>
+                        <input type="file">
+                        <hr>
+                        <input type="file">
+                        <hr>
+                        <input type="file">
+                        <hr>
+                    </div>
+
+                </div>
+
+                <div class="captchaCode">
+                    <p>Enter Captcha Code</p>
+                    <div class="main">
+
+                        <canvas id="captchaCanvas" width="200" height="50"></canvas>
+                        <input type="text" id="captchaInput" placeholder="Enter CAPTCHA">
+                        <p id="captchaResult"></p>
+                    </div>
+                </div>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+
+        <div class="savingAccount" id="individualAccount">
+            <h1>Individual <br> Current Account</h1>
+            <div class="divider"></div>
+            <form action="">
+                <h2>PERSONAL DETAILS</h2>
+                <div class="inputsMain">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                </div>
+                <textarea name="" id="" rows="5" placeholder="Permanent Address*"></textarea>
+                <h2 style="padding-top: 2rem;">EMPLOYMENT / BUSINESS DETAILS</h2>
+                <div class="inputsMain">
+                    <select>
+                        <option value="Male">Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                    <select>
+                        <option value="Male">Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                </div>
+                <textarea name="" id="" rows="5" placeholder="Permanent Address*"></textarea>
+                <h2 style="padding-top: 2rem;">NEXT OF KIN DETAILS</h2>
+                <div class="inputsMain">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                </div>
+                <textarea name="" id="" rows="5" placeholder="Permanent Address*"></textarea>
+
+                <div class="additionalFiles">
+                    <h2>Additional Files</h2>
+                    <h3>Please Upload scanned copies of the following:</h3>
+                    <ol>
+                        <li> Recent Passport Photograph*</li>
+                        <li> Recent Utility Bill* (Not morethan 3 months)</li>
+                        <li> Valid Means of Identification*</li>
+                        <li> Your Signature or Thumb print*</li>
+                    </ol>
+
+                    <div class="files">
+                        <input type="file">
+                        <hr>
+                        <input type="file">
+                        <hr>
+                        <input type="file">
+                        <hr>
+                        <input type="file">
+                        <hr>
+                    </div>
+
+                </div>
+
+                <div class="captchaCode">
+                    <p>Enter Captcha Code</p>
+                    <div class="main">
+
+                        <canvas style="background-color: #eeeeee; border-radius: 7px;" id="captchaCanvas2" width="200"
+                            height="50"></canvas>
+                        <input type="text" id="captchaInput2" placeholder="Enter CAPTCHA">
+                        <p id="captchaResult2"></p>
+                    </div>
+                </div>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+        <div class="savingAccount" id="corpoarteAccount">
+            <h1>Corporate <br> Current Account</h1>
+            <div class="divider"></div>
+            <form action="">
+                <h2>COMPANY / BUSINESS DETAILS</h2>
+                <div class="inputsMain">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                </div>
+                <textarea name="" id="" rows="5" placeholder="Permanent Address*"></textarea>
+                <h2 style="padding-top: 2rem;">SIGNATORY SECTION</h2>
+                <h3 style="padding-top: 1.5rem; font-weight: 600; font-size: 1rem; padding-bottom: .7rem;">First
+                    Signatory</h3>
+                <div class="inputsMain">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                </div>
+                <textarea name="" id="" rows="5" placeholder="Permanent Address*"></textarea>
+                <h3 style="padding-top: 1.5rem; font-weight: 600; font-size: 1rem; padding-bottom: .2rem;">Second
+                    Signatory</h3>
+                <p style="padding-bottom: .8rem;">Please fill this section only if you have a second signatory.</p>
+                <div class="inputsMain">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                    <input type="text" placeholder="Enter name*">
+                </div>
+                <textarea name="" id="" rows="5" placeholder="Permanent Address*"></textarea>
+
+                <div class="additionalFiles">
+                    <h2>Additional Files</h2>
+                    <h3>Please Upload scanned copies of the following:</h3>
+                    <ol>
+                        <li> Business Registration Form*</li>
+                        <li> MOA (If applicable)*</li>
+                        <li> Utility Bill of Corporate Address (Not more than 3 months)*</li>
+                        <li> Recent Passport Photograph of First Signatory*</li>
+                        <li> Recent Utility Bill of First Signatory (Not more than 3 months)*</li>
+                        <li> Valid Means of Identification of First Signatory*</li>
+                        <li> Your Signature or Thumb print of First Signatory</li>
+                    </ol>
+
+                    <div class="files">
+                        <input type="file">
+                        <hr>
+                        <input type="file">
+                        <hr>
+                        <input type="file">
+                        <hr>
+                        <input type="file">
+                        <hr>
+                        <input type="file">
+                        <hr>
+                        <input type="file">
+                        <hr>
+                    </div>
+
+                </div>
+
+                <div class="captchaCode">
+                    <p>Enter Captcha Code</p>
+                    <div class="main">
+
+                        <canvas style="background-color: #eeeeee; border-radius: 7px;" id="captchaCanvas3" width="200"
+                            height="50"></canvas>
+                        <input type="text" id="captchaInput3" placeholder="Enter CAPTCHA">
+                        <p id="captchaResult3"></p>
+                    </div>
+                </div>
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+<script>
+
+    const corpoarteAccount = document.getElementById("corpoarteAccount")
+    const individualAccount = document.getElementById("individualAccount")
+    const savingAccount = document.getElementById("savingAccount")
+    const corpoarteAccountTAb = document.getElementById("corpoarteAccountTAb")
+    const individualAccountTab = document.getElementById("individualAccountTab")
+    const savingAccountTab = document.getElementById("savingAccountTab")
+
+    corpoarteAccountTab.addEventListener('click', () => {
+        corpoarteAccount.style.display = "block"
+        individualAccount.style.display = "none"
+        savingAccount.style.display = "none"
+        corpoarteAccountTab.classList.add("activeTab")
+        individualAccountTab.classList.remove("activeTab")
+        savingAccountTab.classList.remove("activeTab")
+    })
+    individualAccountTab.addEventListener('click', () => {
+        individualAccount.style.display = "block"
+        corpoarteAccount.style.display = "none"
+        savingAccount.style.display = "none"
+        corpoarteAccountTab.classList.remove("activeTab")
+        individualAccountTab.classList.add("activeTab")
+        savingAccountTab.classList.remove("activeTab")
+    })
+    savingAccountTab.addEventListener('click', () => {
+        individualAccount.style.display = "none"
+        corpoarteAccount.style.display = "none"
+        savingAccount.style.display = "block"
+        corpoarteAccountTab.classList.remove("activeTab")
+        individualAccountTab.classList.remove("activeTab")
+        savingAccountTab.classList.add("activeTab")
+    })
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const canvas = document.getElementById('captchaCanvas');
+        const ctx = canvas.getContext('2d');
+        const captchaText = generateCaptchaText(6);
+        drawCaptcha(captchaText);
+
+        function generateCaptchaText(length) {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            let text = '';
+            for (let i = 0; i < length; i++) {
+                text += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return text;
+        }
+
+        function drawCaptcha(text) {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.font = '30px Arial';
+            ctx.fillStyle = '#000';
+            ctx.fillText(text, 10, 35);
+            ctx.stroke();
+        }
+
+        window.validateCaptcha = function () {
+            const userInput = document.getElementById('captchaInput').value;
+            const result = document.getElementById('captchaResult');
+            if (userInput === captchaText) {
+                result.textContent = 'CAPTCHA correct!';
+                result.style.color = 'green';
+            } else {
+                result.textContent = 'CAPTCHA incorrect. Try again.';
+                result.style.color = 'red';
+            }
+        }
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        const canvas = document.getElementById('captchaCanvas2');
+        const ctx = canvas.getContext('2d');
+        const captchaText = generateCaptchaText(6);
+        drawCaptcha(captchaText);
+
+        function generateCaptchaText(length) {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            let text = '';
+            for (let i = 0; i < length; i++) {
+                text += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return text;
+        }
+
+        function drawCaptcha(text) {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.font = '30px Arial';
+            ctx.fillStyle = '#000';
+            ctx.fillText(text, 10, 35);
+            ctx.stroke();
+        }
+
+        window.validateCaptcha = function () {
+            const userInput = document.getElementById('captchaInput2').value;
+            const result = document.getElementById('captchaResult2');
+            if (userInput === captchaText) {
+                result.textContent = 'CAPTCHA correct!';
+                result.style.color = 'green';
+            } else {
+                result.textContent = 'CAPTCHA incorrect. Try again.';
+                result.style.color = 'red';
+            }
+        }
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        const canvas = document.getElementById('captchaCanvas3');
+        const ctx = canvas.getContext('2d');
+        const captchaText = generateCaptchaText(6);
+        drawCaptcha(captchaText);
+
+        function generateCaptchaText(length) {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            let text = '';
+            for (let i = 0; i < length; i++) {
+                text += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            return text;
+        }
+
+        function drawCaptcha(text) {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.font = '30px Arial';
+            ctx.fillStyle = '#000';
+            ctx.fillText(text, 10, 35);
+            ctx.stroke();
+        }
+
+        window.validateCaptcha = function () {
+            const userInput = document.getElementById('captchaInput3').value;
+            const result = document.getElementById('captchaResult3');
+            if (userInput === captchaText) {
+                result.textContent = 'CAPTCHA correct!';
+                result.style.color = 'green';
+            } else {
+                result.textContent = 'CAPTCHA incorrect. Try again.';
+                result.style.color = 'red';
+            }
+        }
+    });
+
+
+</script>
+
+</html>
