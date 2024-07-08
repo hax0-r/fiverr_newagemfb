@@ -313,9 +313,10 @@ nav {
     @media screen and (max-width:500px) {
         .tabs {
             display: grid;
-            padding: 0 1rem ;
+            padding: 0 1rem;
             grid-template-columns: 2fr 2fr;
-            .tab{
+
+            .tab {
                 padding: 1rem;
             }
         }
@@ -326,10 +327,20 @@ nav {
         width: 100%;
         margin: 0 auto;
         padding: 5rem 3rem 3rem 3rem;
-        display: flex;
-        justify-content: space-between;
-        gap: 2rem;
         overflow: hidden;
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            gap: 3rem;
+        }
+        
+        @media screen and (max-width:670px) {
+            .flex {
+                flex-direction: column;
+            }
+         
+        }
 
         .left {
             img {
@@ -499,7 +510,12 @@ nav {
         }
     }
 
-    #SchoolFacility {
+    #salaryAccount,
+    #SchoolFacility,
+    #AgricultureL,
+    #LPOFinancing,
+    #CorporateDiv,
+    #MicroLoan {
         display: none;
     }
 }
