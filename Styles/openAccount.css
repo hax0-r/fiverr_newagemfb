@@ -267,6 +267,12 @@ nav {
     }
 }
 
+@media screen and (max-width:500px) {
+ .accountOpen{
+    padding: 3rem 1rem;
+ }
+}
+
 .accountType {
     h1 {
         text-align: center;
@@ -458,7 +464,8 @@ nav {
 
     @media screen and (max-width:500px) {
      .savingAccount{
-        padding-top: 2rem;
+        padding: 2rem 1rem 3rem 1rem;
+
      }
     }
 
